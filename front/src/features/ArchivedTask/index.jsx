@@ -50,13 +50,13 @@ function TaskList() {
 							p='5'
 							borderRadius='lg'
 						>
-							<Heading fontWeight='bold' size='lg' as='s' bgGradient='linear(to-l, blue.500, green.400)' bgClip='text'>
+							<Heading fontWeight='bold' size='lg' bgGradient='linear(to-l, blue.500, green.400)' bgClip='text'>
 								{task.title}
 							</Heading>
-							<Text w='100%' as='s'>
+							<Text as='s' w='100%'>
 								{task.description}
 							</Text>
-							<Text w='100%' as='s' color='gray'>
+							<Text as='s' w='100%' color='gray'>
 								{new Date(task.created).toUTCString()}
 							</Text>
 						</Stack>
